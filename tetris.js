@@ -158,6 +158,12 @@ function moveTetramino(event) {
             }
 
             break;
+        case " ":
+        
+            while (!checkCollision(newTetramino, newX, newY + 1)) {
+                newY++;
+            }  
+            break;
         default:
             break;
     }
